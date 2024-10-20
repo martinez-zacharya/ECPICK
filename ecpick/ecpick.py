@@ -188,7 +188,7 @@ class ECPICK:
 
         x_value = np.reshape(np.array(x_value), (len(x_value), 1, 1000, 21))
         dataset = PredictDataset(x_value)
-        data_loader = DataLoader(dataset, batch_size=int(args.batch_size))
+        data_loader = DataLoader(dataset, batch_size=int(args.batch_size_emb))
         logger.info(f"Number of Sequence: {num_seqs}")
         # endregion
 
